@@ -3,19 +3,16 @@ from tkinter import messagebox, CENTER
 
 window =tkinter.Tk()
 window.title("Registration Page")
-window.geometry("400x600")
+window.geometry("300x400")
 
 tkinter.Label(window, text="Enter the details\n").pack()
 tkinter.Label(window, text="Name of the Student").pack()
 tkinter.Entry(window).pack()
 
-tkinter.Label(window, text="\nEmail Id").pack()
+tkinter.Label(window, text="\nEmail-Id").pack()
 tkinter.Entry(window).pack()
 
-tkinter.Label(window, text="\nPasswords").pack()
-tkinter.Entry(window).pack()
-
-tkinter.Label(window, text="\nSection").pack()
+tkinter.Label(window, text="\nPassword").pack()
 tkinter.Entry(window).pack()
 
 tkinter.Label(window, text="\nPhone Number").pack()
@@ -24,7 +21,7 @@ tkinter.Entry(window).pack()
 def regbutton():
     messagebox.showinfo('Message box','Registration successful')
 btn = tkinter.Button(window, text="Submit",bg="green",fg="black",command=regbutton)
-btn.pack(side='right')
+btn.pack(side='bottom')
 
 tkinter.Label(window, text="\nGender").pack()
 var = tkinter.Invar()
