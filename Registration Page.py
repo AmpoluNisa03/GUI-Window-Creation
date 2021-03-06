@@ -24,7 +24,7 @@ btn = tkinter.Button(window, text="Submit",bg="green",fg="black",command=regbutt
 btn.pack(side='bottom')
 
 tkinter.Label(window, text="\nGender").pack()
-var = tkinter.Invar()
+var = tkinter.IntVar()
 R1 = tkinter.Radiobutton(window, text="Male",variable=var, value=0,)
 R1.pack(anchor.CENTER)
 R1 = tkinter.Radiobutton(window, text="Female",variable=var, value=1,)
